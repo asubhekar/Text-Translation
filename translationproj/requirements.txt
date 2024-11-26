@@ -1,0 +1,16 @@
+langchain-huggingface
+transformers
+librosa
+soundfile
+torch
+djangorestframework
+django 
+numpy
+pandas
+tf-keras
+sentencepiece
+sacremoses
+langdetect
+torch
+torchvision
+torchaudio
