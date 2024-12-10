@@ -1,3 +1,6 @@
 torch
 transformers
 langdetect
+django
+djangorestframework
+
