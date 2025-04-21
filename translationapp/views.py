@@ -16,11 +16,10 @@ class translation(APIView):
         if req.is_valid():
             input = req.data['text']
             selected_lang = req.data['target']
-            detected_lang = detect(input)
-            model = App(lang1 = detected_lang, lang2 = selected_lang)
-            print(f"Detected Language = {detected_lang}")
+    
+            model = App(input,lang2 = selected_lang)
             print(input)
-            translated_text = model.translate(input)
+            translated_text = model.translate()
             print(translated_text)
             response_serializer = TranslationResponseS({'translated_text': translated_text})
         return Response(response_serializer.data, status = status.HTTP_200_OK)
